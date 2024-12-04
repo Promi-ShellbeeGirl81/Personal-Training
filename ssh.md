@@ -1,4 +1,4 @@
-# Setting Up SSH for GitHub
+# Setting Up SSH and Clone Github Repository in Device
 
 ## Step 1: Verify Your SSH Key Exists
 Check if an SSH key has already been created:
