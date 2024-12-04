@@ -48,11 +48,19 @@ Click Add SSH key.
 
 ## Step 4: Test the SSH Connection
 Run the following:
+
 ```bash
 ssh -T git@github.com
 ```
 If successful, you’ll see:
+
 ```bash
-git clone git@github.com:Promi-ShellbeeGirl81/Personal-Training.git
+Hi <your_username>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
+## Step 5: Retry Cloning the Repository
+Now, clone the repository using the SSH URL:
+
+```bash
+git clone git@github.com:<your_username>/<repository_name>.git
+```
