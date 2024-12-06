@@ -128,6 +128,11 @@ header a:hover{
     padding:10px;
 }
 
+#boxes .box h3{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
 #boxes .box img{
     width: 90px;
 }

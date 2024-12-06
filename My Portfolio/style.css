@@ -1,0 +1,171 @@
+body{
+    background-color: bisque;
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: block;
+    flex-direction: row;
+    float: right;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+.navbar ul li{
+    margin: 30px;
+    font-size: 30px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg); 
+}
+
+.navbar ul li:hover{
+    text-decoration: underline blue;
+    color: blue;
+    cursor: pointer;
+}
+
+.navbar ul li:last-child{
+    color: blue;
+}
+
+.main{
+    display: flex; 
+    gap: 20px; 
+    padding: 20px;
+}
+.about{
+    display: block;
+    align-items: center; 
+    justify-content: space-between;   
+    padding: 20px;
+    background-color: blueviolet;
+    max-width: 40%;
+    margin-left: 150px;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.about img{
+    max-height: 500px;
+    max-width: 500vh;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.about .image{
+    margin-left: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.abouttext{
+    font-size: 30px;
+    margin-left: 30px;
+}
+.abouttext .para1{
+    font-size: 60px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.para1 span {
+    margin-left: 20px;
+    font-weight: bolder;
+    color: white;
+    white-space: nowrap; 
+    overflow: hidden; 
+    display: inline-block; 
+    border-right: 4px solid black; 
+    animation: typing 5s steps(30, end) infinite, cursorBlink 0.7s step-end infinite; 
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 72%;
+    }
+}
+
+@keyframes cursorBlink {
+    from {
+        border-right-color: white;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.portfolio {
+    text-align: center;
+    margin: 50px;
+}
+
+.portfolio h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+}
+
+.info-card {
+    background-color: white;
+    padding: 30px;
+    width: 350px;
+    height: 260px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+}
+
+.info-card span {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info-card p {
+    font-size: 18px;
+    color: #777;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.projects {
+    background-color: #a2d2ff;
+}
+
+.awards {
+    background-color: #d4a5a5;
+}
+
+.clients {
+    background-color: #6a4c93;
+    color: white;
+}
+
+.info-card img {
+    width: 100%; /* Makes the image fit the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; 
+    display: block;
+}
+.design-awards {
+    background-color: #f9a826;
+    color: white;
+}
