@@ -48,7 +48,7 @@ body {
 
 
 
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 560px) {
       
       #left {
         grid-area: 3 / 1 / 7 / 8; 
@@ -80,30 +80,40 @@ body {
       } 
   }
   
-  @media (min-width: 769px) and (max-width: 1024px) {
-      
+  @media (min-width: 561px) and (max-width: 768px) {
+      .container{
+        margin-top: 10%;
+      }
     #left {
-      grid-area: 3 / 1 / 8 / 8; 
+        grid-area: 1 / 1 / 3 / 8; 
+        justify-self: stretch;
+        height: 80%;
     }
     
     #center {
-      grid-area: 2 / 2 / 9 / 10; 
+        grid-area: 1 / 2 / 3 / 10;
+        height: 97%;
     }
     
     #right {
-      grid-area: 3/ 8 / 8 / 12;
-      
+        grid-area: 1 / 8 / 3 / 12; 
+        justify-self: stretch;
+        height: 80%;
     }
     
     #center2 {
-        grid-area: 9 / 2 / 11 / 10; 
+        grid-area: 3 / 2 / 4 / 10; 
+        transform: translateY(-8%);
     }
     
-    
     #left img {
+        transform: translateX(-2%) translateY(10%);
         object-position: right; 
-        object-fit: cover;
-     } 
+        object-fit: cover; 
+    }
 
-  
+    #right img {
+        transform: translateY(10%);
+    }
+    
 }
