@@ -13,26 +13,23 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;  
+    grid-column-gap: 0;
+    grid-row-gap: 0;  
 }
 
 #left {
     grid-area: 3 / 2 / 8 / 8; 
     z-index: 1;
-    /*border: 2px solid black;*/
 }
 
 #right {
     grid-area: 3 / 8 / 8 / 10; 
     z-index: 1;
-    /*border: 2px solid black;*/
 }
 
 #center {
     grid-area: 2 / 5 / 9 / 9;
     z-index: 0;
-    /*border: 2px solid black;*/
 }
 
 #center2 {
@@ -49,3 +46,64 @@ body {
 }
 
 
+
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+      
+      #left {
+        grid-area: 3 / 1 / 7 / 8; 
+      }
+      
+      #center {
+        grid-area: 2 / 2 / 8 / 12; 
+      }
+      
+      #right {
+        grid-area: 3/ 10 / 7 / 13;
+        
+      }
+      
+      #center2 {
+        grid-area: 8/ 2 / 10 / 12;
+      }
+      
+      
+      #left img {
+        object-fit: cover; 
+        object-position: right; 
+      }
+      
+      
+      #right img {
+         object-position: left; 
+         object-fit: cover;
+      } 
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+      
+    #left {
+      grid-area: 3 / 1 / 8 / 8; 
+    }
+    
+    #center {
+      grid-area: 2 / 2 / 9 / 10; 
+    }
+    
+    #right {
+      grid-area: 3/ 8 / 8 / 12;
+      
+    }
+    
+    #center2 {
+        grid-area: 9 / 2 / 11 / 10; 
+    }
+    
+    
+    #left img {
+        object-position: right; 
+        object-fit: cover;
+     } 
+
+  
+}
