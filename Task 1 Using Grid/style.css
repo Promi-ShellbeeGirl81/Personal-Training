@@ -30,15 +30,13 @@
 
 #center2 {
   grid-area: 5 / 5 / 6 / 9;
-  z-index: 0;
   width: 100%;
 }
 
 
-
-@media (min-width: 0px) and (max-width: 900px) {
+@media (min-width: 0px) and (max-width: 720px) {
   .container {
-    grid-template-columns: 13% 30% 4% 30% 15% 8%;
+    grid-template-columns: 12% 28% 6% 28% 15% 16%;
     grid-template-rows: 5% 15% 50% 20% 5% 5%; 
   }
 
@@ -52,7 +50,7 @@
   
   #right {
     grid-area: 3 / 5 / 4 / 7; 
-    width: 105%;
+    width: 82%;
     height: 110%;
     object-position: left; 
     object-fit: cover;
@@ -60,13 +58,10 @@
   
   #center {
     grid-area: 2 / 2 / 5 / 6;
-    width: 100%;
   }
   
   #center2 {
     grid-area: 5 / 2 / 6 / 6;
-    z-index: 0;
-    width: 100%;
   }
 }
 
